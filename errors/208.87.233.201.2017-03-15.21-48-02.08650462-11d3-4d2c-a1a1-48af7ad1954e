@@ -1,0 +1,814 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.NameError'> name 'date' is not defined"
+p3
+sS'layer'
+p4
+S'/home/LedC/web2py/applications/prayer/views/default/index.html'
+p5
+sS'code'
+p6
+S'response.write(\'<!DOCTYPE html>\\n<html lang="en">\\n<head>\\n  <!-- Theme Made By www.w3schools.com - No Copyright -->\\n  <title>National Prayer Project</title>\\n  <meta charset="utf-8">\\n  <meta name="viewport" content="width=device-width, initial-scale=1">\\n  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">\\n  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">\\n  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>\\n  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>\\n  <style>\\n  body {\\n      font: 20px Montserrat, sans-serif;\\n      line-height: 1.8;\\n      color: #f5f6f7;\\n  }\\n  p {font-size: 16px;}\\n  .margin {margin-bottom: 45px;}\\n  .bg-1 {\\n      background-color: #388777; /* Green */\\n      color: #ffffff;\\n  }\\n  .bg-2 {\\n      background-color: #474e5d; /* Dark Blue */\\n      color: #ffffff;\\n  }\\n  .bg-3 {\\n      background-color: #ffffff; /* White */\\n      color: #555555;\\n  }\\n  .bg-4 {\\n      background-color: #2f2f2f; /* Black Gray */\\n      color: #fff;\\n  }\\n  .container-fluid {\\n      padding-top: 70px;\\n      padding-bottom: 70px;\\n  }\\n  .navbar {\\n      padding-top: 15px;\\n      padding-bottom: 15px;\\n      border: 0;\\n      border-radius: 0;\\n      margin-bottom: 0;\\n      font-size: 12px;\\n      letter-spacing: 5px;\\n  }\\n  .navbar-nav  li a:hover {\\n      color: #1abc9c !important;\\n  }\\n  </style>\\n</head>\\n<body>\\n\\n<!-- Navbar -->\\n<nav class="navbar navbar-default">\\n  <div class="container">\\n    <div class="navbar-header">\\n      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">\\n        <span class="icon-bar"></span>\\n        <span class="icon-bar"></span>\\n        <span class="icon-bar"></span>\\n      </button>\\n      <a class="navbar-brand" href="#"></a>\\n    </div>\\n    <div class="collapse navbar-collapse" id="myNavbar">\\n      <ul class="nav navbar-nav navbar-right">\\n        <li><a href="#who">WHO</a></li>\\n        <li><a href="#when">WHEN</a></li>\\n        <li><a href="#what">WHAT</a></li>\\n        <li><a href="#where">WHERE</a></li>\\n        <li><a href="#why">WHY</a></li>\\n        <li><a href="#how">HOW</a></li>\\n        <li><a href="#how">CONTRIBUTE</a></li>\\n      </ul>\\n    </div>\\n  </div>\\n</nav>\\n\\n<!-- First Container -->\\n<div class="container-fluid bg-1 text-center">\\n    <h1 class = "Margin">\\n        National Prayer Project, U.S.A.\\n    </h1>\\n    <h2>\\n       Because there is more that binds us than divides us.\\n    </h2>\\n\\n  \', escape=False)\nresponse.write((CENTER(IMG(_src=URL(\'static\',\'tr.jpg\'), _class="img-responsive img-circle margin", _style="max-width:40%; max-height:40%", _alt="tree"))))\nresponse.write(\'\\n\\n  <h1 id="who" class="margin">Who?</h1>\\n  <h3>You! and as many people we can get to pray at the same time on the same day.</h3>\\n    <p><h3>\\n    We invite those of faith any faith and no faith to participate.</p>\\n    <p></h3><br>\\n<p><h1>\\n    Next day is March 25, 2017\\n    \', escape=False)\nda = (date(2017, 3, 18), date(2017, 5, 12), date(2017, 5, 22))\nresponse.write(\'\\n\', escape=False)\nfor item in da:\n    response.write(\'\\n    \', escape=False)\n    if item >= date.today():\n        response.write(items)\n        response.write(\'\\n      \', escape=False)\n        break\n    response.write(\'\\n    \', escape=False)\n    pass\nresponse.write(\'\\n    </h1>\\n\\n    </p>\\n    \\n</div>\\n\\n<!-- Second Container -->\\n\\n    <div class="container-fluid bg-2 text-center">\\n  <h1 id="when" class="margin">When?</h1>\\n\\n  <p><h3>The prayer time will be at 1pm pacific standard time(see below for your time zone).  The days will be picked at random and will occur about once every 8 days.  The day will be displayed above at least 24 hours ahead of time. Again, we all pray for a couple minutes beginning at 1pm (PSD) that day.\\n\\n </p></h3><br>\\n\\n<!-- image Container -->\\n\\n<div class="row">\\n    <div class="col-sm-2"></div>\\n    <div class="col-sm-2">\\n      <p><strong>Samoa</strong></p>\\n        <p><strong>10am</strong></p><br>\\n       \', escape=False)\nresponse.write((CENTER(IMG(_src=URL(\'static\',\'samoa.jpeg\'), _class="img-responsive img-circle margin", _alt="img"))))\nresponse.write(\'\\n    </div>\\n    <div class="col-sm-2">\\n      <p><strong>Hawaii</strong></p>\\n        <p><strong>11am</strong></p><br>\\n      \', escape=False)\nresponse.write((CENTER(IMG(_src=URL(\'static\',\'hawaii2.jpg\'), _class="img-responsive img-circle margin", _alt="img"))))\nresponse.write(\'\\n    </div>\\n    <div class="col-sm-2">\\n      <p><strong>Alaska</strong></p>\\n        <p><strong>Noon</strong></p><br>\\n      \', escape=False)\nresponse.write((CENTER(IMG(_src=URL(\'static\',\'alaska.jpg\'), _class="img-responsive img-circle margin", _alt="img"))))\nresponse.write(\'\\n    </div>\\n    <div class="col-sm-2">\\n      <p><strong>Pacific</strong></p>\\n        <p><strong>1pm</strong></p><br>\\n      \', escape=False)\nresponse.write((CENTER(IMG(_src=URL(\'static\',\'california.jpg\'), _class="img-responsive img-circle margin", _alt="img"))))\nresponse.write(\'\\n    </div>\\n</div>\\n        <div class="row">\\n              <div class="col-sm-2"></div>\\n              <div class="col-sm-1"></div>\\n    <div class="col-sm-2">\\n      <p><strong>Mountain</strong></p>\\n        <p><strong>2pm</strong></p><br>\\n      \', escape=False)\nresponse.write((CENTER(IMG(_src=URL(\'static\',\'mountain.jpg\'), _class="img-responsive img-circle margin", _alt="img"))))\nresponse.write(\'\\n    </div>\\n    <div class="col-sm-2">\\n      <p><strong>Central</strong></p>\\n        <p><strong>3pm</strong></p><br>\\n      \', escape=False)\nresponse.write((CENTER(IMG(_src=URL(\'static\',\'central.jpeg\'), _class="img-responsive img-circle margin", _alt="img"))))\nresponse.write(\'\\n    </div>\\n    <div class="col-sm-2">\\n      <p><strong>Eastern</strong></p>\\n        <p><strong>4pm</strong></p><br>\\n      \', escape=False)\nresponse.write((CENTER(IMG(_src=URL(\'static\',\'eastern.jpg\'), _class="img-responsive img-circle margin", _alt="img"))))\nresponse.write(\'\\n    </div>\\n        </div>\\n</div>\\n</div>\\n<div class="container-fluid bg-1 text-center">\\n  <h1 id="what" class="margin">What?</h1>\\n  <p><h3>\\n    \\n    It is quite simple; we are praying; praying for peace and civility in ourselves, media, protesters and elected officials.  What is happening across in our country is very American and political discourse should be welcomed.  Let\\xe2\\x80\\x99s take a moment to stop calling those on the other side extremists and recognize we are all radicals. America is a radical idea.  What is going on is tradition and our country needs it.</p></h3>\\n    <p><h3><br>\\n\\n\\nLet\\xe2\\x80\\x99s unclench our fists, relax our jaws for a moment and consider all that binds us.  Anything beyond that is up to you; your prayer is your prayer.\\n </p></h3>\\n\\n</div>\\n    <!-- 3 Container -->\\n    <!-- 4 Container -->\\n    <div class="container-fluid bg-2 text-center">\\n  <h1 id="where" class="margin">Where?</h1>\\n  <p><h3> Wherever you are is where it is happening.  We are just focused on time.    </p></h3>\\n\\n</div>\\n    <!-- 5 Container -->\\n    <div class="container-fluid bg-1 text-center">\\n  <h1 id="why"  class="margin">Why?</h1>\\n  <p><h3>It is getting ugly out there.  There is too much yelling, too much violence, too much division, too much self-assuredness and not enough listening; let\\xe2\\x80\\x99s not lose our humanity.  </p></h3>\\n\\n</div>\\n    <!-- 6 Container -->\\n    <div class="container-fluid bg-2 text-center">\\n  <h1 id="how" class="margin">How?</h1>\\n        <p><h3>The following is from The Bible and seems like good advice.</h3></p><br>\\n        <p><h3>5 \\xe2\\x80\\x9cAnd when you pray, do not be like the hypocrites, for they love to pray standing in the synagogues and on the street corners to be seen by others. Truly I tell you, they have received their reward in full. 6 But when you pray, go into your room, close the door and pray to your Father, who is unseen. Then your Father, who sees what is done in secret, will reward you. 7 And when you pray, do not keep on babbling like pagans, for they think they will be heard because of their many words. 8 Do not be like them, for your Father knows what you need before you ask him." Matthew 6:4-8\\n       </h3> </p><br>\\n        <p><h3>\\n            Pray how you want to pray.  You can\\\'t get it wrong.</h3>\\n        </p>\\n\\n</div>\\n <!-- 5 Container -->\\n    <div class="container-fluid bg-1 text-center">\\n  <h1 id="contribute" class="margin">Contribute</h1>\\n  <p><h3>Do consider making a small contribution.  We ask for a one time donation of $4.</h3> </p>\\n        <p><h3>\\n            This will help keep the lights on and the website running.\\n        </p></h3>\\n <p><h3>If this is not an option that is fine.  We could use your help in spreading the word.</h3> </p><br>\\n\\n\\n    <form action="#" method="POST">\\n  <script\\n    src="https://checkout.stripe.com/checkout.js" class="stripe-button"\\n    data-key="pk_test_V5b84CCXyZ0XSM7E4Cl1mI48"\\n    data-amount="400"\\n    data-name="NationalPrayerProject.com"\\n    data-description=""\\n    data-image=""\\n    data-locale="auto"\\n    data-zip-code="true">\\n  </script>\\n</form>\\n\\n</div>\\n <footer class="footer">\\n      <div class="container-fluid bg-2 text-center">\\n        <div class="copyright pull-left">\', escape=False)\nresponse.write(T(\'Copyright\'))\nresponse.write(\' &#169; \', escape=False)\nresponse.write(request.now.year)\nresponse.write(\'</div>\\n          <div id="poweredBy" class="pull-right">\\n            \', escape=False)\nresponse.write(T(\'Powered by\'))\nresponse.write(\'\\n            <a href="http://www.web2py.com/">web2py</a>\\n          </div>\\n      </div>\\n    </footer>\\n</body>\\n</html>\\n\', escape=False)'
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__hash__'
+p12
+S"<method-wrapper '__hash__' of exceptions.NameError object>"
+p13
+sS'__setattr__'
+p14
+S"<method-wrapper '__setattr__' of exceptions.NameError object>"
+p15
+sS'__reduce_ex__'
+p16
+S'<built-in method __reduce_ex__ of exceptions.NameError object>'
+p17
+sS'__getslice__'
+p18
+S"<method-wrapper '__getslice__' of exceptions.NameError object>"
+p19
+sS'__getitem__'
+p20
+S"<method-wrapper '__getitem__' of exceptions.NameError object>"
+p21
+sS'__setstate__'
+p22
+S'<built-in method __setstate__ of exceptions.NameError object>'
+p23
+sS'args'
+p24
+S'("name \'date\' is not defined",)'
+p25
+sS'__reduce__'
+p26
+S'<built-in method __reduce__ of exceptions.NameError object>'
+p27
+sS'__str__'
+p28
+S"<method-wrapper '__str__' of exceptions.NameError object>"
+p29
+sS'__format__'
+p30
+S'<built-in method __format__ of exceptions.NameError object>'
+p31
+sS'__getattribute__'
+p32
+S"<method-wrapper '__getattribute__' of exceptions.NameError object>"
+p33
+sS'__class__'
+p34
+S"<type 'exceptions.NameError'>"
+p35
+sS'__unicode__'
+p36
+S'<built-in method __unicode__ of exceptions.NameError object>'
+p37
+sS'__delattr__'
+p38
+S"<method-wrapper '__delattr__' of exceptions.NameError object>"
+p39
+sS'__subclasshook__'
+p40
+S'<built-in method __subclasshook__ of type object>'
+p41
+sS'__repr__'
+p42
+S"<method-wrapper '__repr__' of exceptions.NameError object>"
+p43
+sS'__dict__'
+p44
+S'{}'
+p45
+sS'__sizeof__'
+p46
+S'<built-in method __sizeof__ of exceptions.NameError object>'
+p47
+sS'__doc__'
+p48
+S"'Name not found globally.'"
+p49
+sS'__init__'
+p50
+S"<method-wrapper '__init__' of exceptions.NameError object>"
+p51
+sS'__new__'
+p52
+S'<built-in method __new__ of type object>'
+p53
+ssS'evalue'
+p54
+S"name 'date' is not defined"
+p55
+sS'request'
+p56
+cgluon.html
+XML_unpickle
+p57
+(S's\xd5\\\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">ajax</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">application</td><td style="vertical-align:top;">:</td><td><div>prayer</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cid</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">client</td><td style="vertical-align:top;">:</td><td><div>208.87.233.201</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">controller</td><td style="vertical-align:top;">:</td><td><div>default</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_admin</td><td style="vertical-align:top;">:</td><td><div>208.87.233.201-af4c0593-1763-4d12-9226-3512abbf9c50<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_prayer</td><td style="vertical-align:top;">:</td><td><div>208.87.233.201-a4521fbe-2bc6-45ef-a0e5-5689da7e24c1<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_welcome</td><td style="vertical-align:top;">:</td><td><div>167.154.43.28-7ee501ca-5f8f-47ae-8b83-e39b225fff46<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">sessionid</td><td style="vertical-align:top;">:</td><td><div>t07kvw4xl7ekbf3bmrlc2hf8kya66zqf<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">env</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">CONTENT_LENGTH</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">CONTENT_TYPE</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">DOCUMENT_ROOT</td><td style="vertical-align:top;">:</td><td><div>/usr/local/openresty/nginx/html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTPS</td><td style="vertical-align:top;">:</td><td><div>on</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_ENCODING</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate, sdch, br</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_LANGUAGE</td><td style="vertical-align:top;">:</td><td><div>en-US,en;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CACHE_CONTROL</td><td style="vertical-align:top;">:</td><td><div>max-age=0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CONNECTION</td><td style="vertical-align:top;">:</td><td><div>close</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_COOKIE</td><td style="vertical-align:top;">:</td><td><div>sessionid=t07kvw4xl7ekbf3bmrlc2hf8kya66zqf; _ga=GA1.2.1964545174.1446138495; session_id_welcome=167.154.43.28-7ee501ca-5f8f-47ae-8b83-e39b225fff46; session_id_prayer=208.87.233.201-a4521fbe-2bc6-45ef-a0e5-5689da7e24c1; session_id_admin=208.87.233.201-af4c0593-1763-4d12-9226-3512abbf9c50</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_HOST</td><td style="vertical-align:top;">:</td><td><div>ledc.pythonanywhere.com</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_REFERER</td><td style="vertical-align:top;">:</td><td><div>https://ledc.pythonanywhere.com/admin/default/site</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_UPGRADE_INSECURE_REQUESTS</td><td style="vertical-align:top;">:</td><td><div>1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_USER_AGENT</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_X_FORWARDED_FOR</td><td style="vertical-align:top;">:</td><td><div>208.87.233.201</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_X_REAL_IP</td><td style="vertical-align:top;">:</td><td><div>208.87.233.201</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">PATH_INFO</td><td style="vertical-align:top;">:</td><td><div>/prayer/default/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">QUERY_STRING</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_ADDR</td><td style="vertical-align:top;">:</td><td><div>10.0.0.14</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_PORT</td><td style="vertical-align:top;">:</td><td><div>39532</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REQUEST_METHOD</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REQUEST_URI</td><td style="vertical-align:top;">:</td><td><div>/prayer/default/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SCRIPT_NAME</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_NAME</td><td style="vertical-align:top;">:</td><td><div>ledc.pythonanywhere.com</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PORT</td><td style="vertical-align:top;">:</td><td><div>443</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PROTOCOL</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;/home/LedC/web2py/applications/admin/&#x27;, &#x27;/home/LedC/web2py/applications/prayer/&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>/home/LedC/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">content_length</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">content_type</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">document_root</td><td style="vertical-align:top;">:</td><td><div>/usr/local/openresty/nginx/html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>/home/LedC/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_encoding</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate, sdch, br</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_language</td><td style="vertical-align:top;">:</td><td><div>en-US,en;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cache_control</td><td style="vertical-align:top;">:</td><td><div>max-age=0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_connection</td><td style="vertical-align:top;">:</td><td><div>close</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cookie</td><td style="vertical-align:top;">:</td><td><div>sessionid=t07kvw4xl7ekbf3bmrlc2hf8kya66zqf; _ga=GA1.2.1964545174.1446138495; session_id_welcome=167.154.43.28-7ee501ca-5f8f-47ae-8b83-e39b225fff46; session_id_prayer=208.87.233.201-a4521fbe-2bc6-45ef-a0e5-5689da7e24c1; session_id_admin=208.87.233.201-af4c0593-1763-4d12-9226-3512abbf9c50</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_host</td><td style="vertical-align:top;">:</td><td><div>ledc.pythonanywhere.com</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_referer</td><td style="vertical-align:top;">:</td><td><div>https://ledc.pythonanywhere.com/admin/default/site</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_upgrade_insecure_requests</td><td style="vertical-align:top;">:</td><td><div>1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_user_agent</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_x_forwarded_for</td><td style="vertical-align:top;">:</td><td><div>208.87.233.201</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_x_real_ip</td><td style="vertical-align:top;">:</td><td><div>208.87.233.201</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">https</td><td style="vertical-align:top;">:</td><td><div>on</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>34.206.101.184</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>ledc.pythonanywhere.com</div></td></tr><tr><td><div>glenn-liveweb15</div></td></tr><tr><td><div>localhost</div></td></tr><tr><td><div>127.0.0.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path_info</td><td style="vertical-align:top;">:</td><td><div>/prayer/default/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">query_string</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_addr</td><td style="vertical-align:top;">:</td><td><div>10.0.0.14</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_port</td><td style="vertical-align:top;">:</td><td><div>39532</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_method</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_uri</td><td style="vertical-align:top;">:</td><td><div>/prayer/default/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">script_name</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_name</td><td style="vertical-align:top;">:</td><td><div>ledc.pythonanywhere.com</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_port</td><td style="vertical-align:top;">:</td><td><div>443</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_protocol</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">uwsgi.node</td><td style="vertical-align:top;">:</td><td><div>glenn-liveweb15</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">uwsgi.version</td><td style="vertical-align:top;">:</td><td><div>2.0.5.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">uwsgi_node</td><td style="vertical-align:top;">:</td><td><div>glenn-liveweb15</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">uwsgi_version</td><td style="vertical-align:top;">:</td><td><div>2.0.5.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_path</td><td style="vertical-align:top;">:</td><td><div>/home/LedC/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.14.6-stable+timestamp.2016.05.10.00.21.47</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.errors</td><td style="vertical-align:top;">:</td><td><div>&lt;uwsgi_file__bin_user_wsgi_wrapper.ErrorLogFile object at 0x7f35be1da650&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;built-in function uwsgi_sendfile&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.input</td><td style="vertical-align:top;">:</td><td><div>&lt;uwsgi._Input object at 0x7f35c874ae58&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multiprocess</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multithread</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.url_scheme</td><td style="vertical-align:top;">:</td><td><div>https</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_errors</td><td style="vertical-align:top;">:</td><td><div>&lt;uwsgi_file__bin_user_wsgi_wrapper.ErrorLogFile object at 0x7f35be1da650&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;built-in function uwsgi_sendfile&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_input</td><td style="vertical-align:top;">:</td><td><div>&lt;uwsgi._Input object at 0x7f35c874ae58&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multiprocess</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multithread</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_url_scheme</td><td style="vertical-align:top;">:</td><td><div>https</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">extension</td><td style="vertical-align:top;">:</td><td><div>html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">folder</td><td style="vertical-align:top;">:</td><td><div>/home/LedC/web2py/applications/prayer/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">function</td><td style="vertical-align:top;">:</td><td><div>index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">global_settings</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;/home/LedC/web2py/applications/admin/&#x27;, &#x27;/home/LedC/web2py/applications/prayer/&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>/home/LedC/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>/home/LedC/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>34.206.101.184</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>ledc.pythonanywhere.com</div></td></tr><tr><td><div>glenn-liveweb15</div></td></tr><tr><td><div>localhost</div></td></tr><tr><td><div>127.0.0.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.14.6-stable+timestamp.2016.05.10.00.21.47</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_https</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_local</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_restful</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_scheduler</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_shell</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">now</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2017, 3, 15, 21, 48, 2, 836626)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_args</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_extension</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">url</td><td style="vertical-align:top;">:</td><td><div>/prayer/default/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">utcnow</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2017, 3, 15, 21, 48, 2, 836641)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi</td><td style="vertical-align:top;">:</td><td><div>&lt;gluon.main.LazyWSGI object at 0x7f35b06e5550&gt;</div></td></tr></table></div>'
+tRp58
+sS'frames'
+p59
+(lp60
+(dp61
+S'file'
+p62
+S'/home/LedC/web2py/gluon/restricted.py'
+p63
+sS'dump'
+p64
+(dp65
+S'environment'
+p66
+S"{'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'ASSIGNJS': <function ASSIGNJS>, 'AppConfig': <function AppConfig>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, ...}"
+p67
+sS'ccode'
+p68
+S'<code object <module> at 0x7f35b05f1130, file "/...cations/prayer/views/default/index.html", line 1>'
+p69
+ssS'lnum'
+p70
+I227
+sS'lines'
+p71
+(dp72
+I224
+S'            ccode = code'
+p73
+sI225
+S'        else:'
+p74
+sI226
+S'            ccode = compile2(code, layer)'
+p75
+sI227
+S'        exec ccode in environment'
+p76
+sI228
+S'    except HTTP:'
+p77
+sI229
+S'        raise'
+p78
+sI230
+S'    except RestrictedError:'
+p79
+sI231
+S'        # do not encapsulate (obfuscate) the original RestrictedError'
+p80
+sI222
+S'    try:'
+p81
+sI223
+S'        if isinstance(code, types.CodeType):'
+p82
+ssS'call'
+p83
+S'(code=\'response.write(\\\'<!DOCTYPE html>\\\\n<html lang="en"...    </footer>\\\\n</body>\\\\n</html>\\\\n\\\', escape=False)\', environment={\'A\': <class \'gluon.html.A\'>, \'ANY_OF\': <class \'gluon.validators.ANY_OF\'>, \'ASSIGNJS\': <function ASSIGNJS>, \'AppConfig\': <function AppConfig>, \'Auth\': <class \'gluon.tools.Auth\'>, \'B\': <class \'gluon.html.B\'>, \'BEAUTIFY\': <class \'gluon.html.BEAUTIFY\'>, \'BODY\': <class \'gluon.html.BODY\'>, \'BR\': <class \'gluon.html.BR\'>, \'BUTTON\': <class \'gluon.html.BUTTON\'>, ...}, layer=\'/home/LedC/web2py/applications/prayer/views/default/index.html\')'
+p84
+sS'func'
+p85
+S'restricted'
+p86
+sa(dp87
+g62
+S'/home/LedC/web2py/applications/prayer/views/default/index.html'
+p88
+sg64
+(dp89
+S'www'
+p90
+S'undefined'
+p91
+sS'Made'
+p92
+g91
+sS'Copyright'
+p93
+g91
+sS'No'
+p94
+g91
+sS'Theme'
+p95
+g91
+sS'By'
+p96
+g91
+ssg70
+I4
+sg71
+(dp97
+I1
+S'response.write(\'<!DOCTYPE html>\\n<html lang="en">\\n<head>\\n  <!-- Theme Made By www.w3schools.com - No Copyright -->\\n  <title>National Prayer Project</title>\\n  <meta charset="utf-8">\\n  <meta name="viewport" content="width=device-width, initial-scale=1">\\n  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">\\n  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">\\n  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>\\n  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>\\n  <style>\\n  body {\\n      font: 20px Montserrat, sans-serif;\\n      line-height: 1.8;\\n      color: #f5f6f7;\\n  }\\n  p {font-size: 16px;}\\n  .margin {margin-bottom: 45px;}\\n  .bg-1 {\\n      background-color: #388777; /* Green */\\n      color: #ffffff;\\n  }\\n  .bg-2 {\\n      background-color: #474e5d; /* Dark Blue */\\n      color: #ffffff;\\n  }\\n  .bg-3 {\\n      background-color: #ffffff; /* White */\\n      color: #555555;\\n  }\\n  .bg-4 {\\n      background-color: #2f2f2f; /* Black Gray */\\n      color: #fff;\\n  }\\n  .container-fluid {\\n      padding-top: 70px;\\n      padding-bottom: 70px;\\n  }\\n  .navbar {\\n      padding-top: 15px;\\n      padding-bottom: 15px;\\n      border: 0;\\n      border-radius: 0;\\n      margin-bottom: 0;\\n      font-size: 12px;\\n      letter-spacing: 5px;\\n  }\\n  .navbar-nav  li a:hover {\\n      color: #1abc9c !important;\\n  }\\n  </style>\\n</head>\\n<body>\\n\\n<!-- Navbar -->\\n<nav class="navbar navbar-default">\\n  <div class="container">\\n    <div class="navbar-header">\\n      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">\\n        <span class="icon-bar"></span>\\n        <span class="icon-bar"></span>\\n        <span class="icon-bar"></span>\\n      </button>\\n      <a class="navbar-brand" href="#"></a>\\n    </div>\\n    <div class="collapse navbar-collapse" id="myNavbar">\\n      <ul class="nav navbar-nav navbar-right">\\n        <li><a href="#who">WHO</a></li>\\n        <li><a href="#when">WHEN</a></li>\\n        <li><a href="#what">WHAT</a></li>\\n        <li><a href="#where">WHERE</a></li>\\n        <li><a href="#why">WHY</a></li>\\n        <li><a href="#how">HOW</a></li>\\n        <li><a href="#how">CONTRIBUTE</a></li>\\n      </ul>\\n    </div>\\n  </div>\\n</nav>\\n\\n<!-- First Container -->\\n<div class="container-fluid bg-1 text-center">\\n    <h1 class = "Margin">\\n        National Prayer Project, U.S.A.\\n    </h1>\\n    <h2>\\n       Because there is more that binds us than divides us.\\n    </h2>\\n\\n  \', escape=False)'
+p98
+sI2
+S'response.write((CENTER(IMG(_src=URL(\'static\',\'tr.jpg\'), _class="img-responsive img-circle margin", _style="max-width:40%; max-height:40%", _alt="tree"))))'
+p99
+sI3
+S'response.write(\'\\n\\n  <h1 id="who" class="margin">Who?</h1>\\n  <h3>You! and as many people we can get to pray at the same time on the same day.</h3>\\n    <p><h3>\\n    We invite those of faith any faith and no faith to participate.</p>\\n    <p></h3><br>\\n<p><h1>\\n    Next day is March 25, 2017\\n    \', escape=False)'
+p100
+sI4
+S'da = (date(2017, 3, 18), date(2017, 5, 12), date(2017, 5, 22))'
+p101
+sI5
+S"response.write('\\n', escape=False)"
+p102
+sI6
+S'for item in da:'
+p103
+sI7
+S"    response.write('\\n    ', escape=False)"
+p104
+sI8
+S'    if item >= date.today():'
+p105
+sI9
+S'        response.write(items)'
+p106
+sI10
+S"        response.write('\\n      ', escape=False)"
+p107
+sI11
+S'        break'
+p108
+sI12
+S"    response.write('\\n    ', escape=False)"
+p109
+sI13
+S'    pass'
+p110
+sI14
+S'response.write(\'\\n    </h1>\\n\\n    </p>\\n    \\n</div>\\n\\n<!-- Second Container -->\\n\\n    <div class="container-fluid bg-2 text-center">\\n  <h1 id="when" class="margin">When?</h1>\\n\\n  <p><h3>The prayer time will be at 1pm pacific standard time(see below for your time zone).  The days will be picked at random and will occur about once every 8 days.  The day will be displayed above at least 24 hours ahead of time. Again, we all pray for a couple minutes beginning at 1pm (PSD) that day.\\n\\n </p></h3><br>\\n\\n<!-- image Container -->\\n\\n<div class="row">\\n    <div class="col-sm-2"></div>\\n    <div class="col-sm-2">\\n      <p><strong>Samoa</strong></p>\\n        <p><strong>10am</strong></p><br>\\n       \', escape=False)'
+p111
+ssg83
+S'()'
+p112
+sg85
+S'<module>'
+p113
+sasS'pyver'
+p114
+S'Python 2.7.6: /usr/local/bin/uwsgi (prefix: /usr)'
+p115
+sS'session'
+p116
+g57
+(S's\x1a\x00\x00\x00<div><table></table></div>'
+tRp117
+sS'etype'
+p118
+S"<type 'exceptions.NameError'>"
+p119
+sS'date'
+p120
+S'Wed Mar 15 21:48:02 2017'
+p121
+sS'response'
+p122
+g57
+(S's\xaa?\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">body</td><td style="vertical-align:top;">:</td><td><div>&lt;cStringIO.StringO object at 0x7f35b0f8d768&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_prayer</td><td style="vertical-align:top;">:</td><td><div>208.87.233.201-a4521fbe-2bc6-45ef-a0e5-5689da7e24c1<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div>/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">delimiters</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>{{</div></td></tr><tr><td><div>}}</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">files</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div>please fill out the form</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">form_label_separator</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">formstyle</td><td style="vertical-align:top;">:</td><td><div>bootstrap3_inline</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generic_patterns</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">google_analytics_id</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">headers</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">X-Powered-By</td><td style="vertical-align:top;">:</td><td><div>web2py</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">logo</td><td style="vertical-align:top;">:</td><td><div><a class="navbar-brand" href="http://www.web2py.com/" id="web2py-logo"><b>web<span>2</span>py</b>&trade;&nbsp;</a></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">menu</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div><table><tr><td><div>Home</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/prayer/default/index</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>My Sites</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/site</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>This App</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Design</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/design/prayer</div></td></tr></table></div></td></tr><tr><td><div><li class="divider"></li></div></td></tr><tr><td><div><table><tr><td><div>Controller</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/prayer/controllers/default.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>View</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/prayer/views/default/index.html</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>DB Model</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/prayer/models/db.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Menu Model</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/prayer/models/menu.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Config.ini</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/prayer/private/appconfig.ini</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Layout</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/prayer/views/layout.html</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Stylesheet</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/prayer/static/css/web2py-bootstrap3.css</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Database</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/prayer/appadmin/index</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Errors</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/errors/prayer</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>About</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/about/prayer</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>web2py.com</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Download</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/download</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Support</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/support</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Demo</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/demo_admin</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Quick Examples</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/examples/default/examples</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>FAQ</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/AlterEgo</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Videos</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/videos/</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Free Applications</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/appliances</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Plugins</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/plugins</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Recipes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2pyslices.com/</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Documentation</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Online book</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book</div></td></tr></table></div></td></tr><tr><td><div><li class="divider"></li></div></td></tr><tr><td><div><table><tr><td><div>Preface</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/00</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Introduction</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/01</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Python</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/02</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Overview</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/03</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>The Core</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/04</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>The Views</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/05</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Database</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/06</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Forms and Validators</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/07</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Email and SMS</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/08</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Access Control</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/09</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Services</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/10</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Ajax Recipes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/11</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Components and Plugins</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/12</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Deployment Recipes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/13</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Other Recipes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/14</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Helping web2py</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/15</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Buy web2py\'s book</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://stores.lulu.com/web2py</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Community</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>None</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Groups</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/usergroups</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Twitter</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://twitter.com/web2py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Live Chat</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://webchat.freenode.net/?channels=web2py</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">meta</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">author</td><td style="vertical-align:top;">:</td><td><div>R Unruh &lt;npp@gmail.com&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">description</td><td style="vertical-align:top;">:</td><td><div>improving social discourse through praper</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generator</td><td style="vertical-align:top;">:</td><td><div>Web2py Web Framework</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">keywords</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>prayer</div></td></tr><tr><td><div>trump</div></td></tr><tr><td><div>media</div></td></tr><tr><td><div>protest</div></td></tr><tr><td><div>America</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">models_to_run</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>^\\w+\\.py$</div></td></tr><tr><td><div>^default/\\w+\\.py$</div></td></tr><tr><td><div>^default/index/\\w+\\.py$</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">postprocessing</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_client</td><td style="vertical-align:top;">:</td><td><div>208.87.233.201</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_compression_level</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_expires</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_data_name</td><td style="vertical-align:top;">:</td><td><div>session_data_prayer</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_file</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;/home/LedC/web2py/applications/prayer/sessions/017/15c/208.87.233.201-a4521fbe-2bc6-45ef-a0e5-5689da7e24c1&#x27;, mode &#x27;rb+&#x27; at 0x7f35b103e420&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_filename</td><td style="vertical-align:top;">:</td><td><div>/home/LedC/web2py/applications/prayer/sessions/208.87.233.201-a4521fbe-2bc6-45ef-a0e5-5689da7e24c1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_hash</td><td style="vertical-align:top;">:</td><td><div>6d7d7eb07e9dc380d110635d28f7b57b</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id</td><td style="vertical-align:top;">:</td><td><div>208.87.233.201-a4521fbe-2bc6-45ef-a0e5-5689da7e24c1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_name</td><td style="vertical-align:top;">:</td><td><div>session_id_prayer</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_locked</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_masterapp</td><td style="vertical-align:top;">:</td><td><div>prayer</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_new</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_storage_type</td><td style="vertical-align:top;">:</td><td><div>file</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">status</td><td style="vertical-align:top;">:</td><td><div>200</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">subtitle</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">title</td><td style="vertical-align:top;">:</td><td><div>Prayer</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">view</td><td style="vertical-align:top;">:</td><td><div>default/index.html</div></td></tr></table></div>'
+tRp123
+sS'locals'
+p124
+(dp125
+S'Service'
+p126
+S"<class 'gluon.tools.Service'>"
+p127
+sS'OBJECT'
+p128
+S"<class 'gluon.html.OBJECT'>"
+p129
+sS'SQLDB'
+p130
+S"<class 'pydal.base.DAL'>"
+p131
+sg116
+S"<Storage {'_formkey[no_table/create]': ['2e12ac4d-7930-4d16-bbc1-7447baa88815'], '_secure': True}>"
+p132
+sS'LINK'
+p133
+S"<class 'gluon.html.LINK'>"
+p134
+sS'BR'
+p135
+S"<class 'gluon.html.BR'>"
+p136
+sS'local_import'
+p137
+S'<function <lambda>>'
+p138
+sS'OPTGROUP'
+p139
+S"<class 'gluon.html.OPTGROUP'>"
+p140
+sS'__package__'
+p141
+S'None'
+p142
+sS'PRE'
+p143
+S"<class 'gluon.html.PRE'>"
+p144
+sS'IS_INT_IN_RANGE'
+p145
+S"<class 'gluon.validators.IS_INT_IN_RANGE'>"
+p146
+sS'IS_LOWER'
+p147
+S"<class 'gluon.validators.IS_LOWER'>"
+p148
+sS'IS_STRONG'
+p149
+S"<class 'gluon.validators.IS_STRONG'>"
+p150
+sS'cache'
+p151
+S'<gluon.cache.Cache object>'
+p152
+sS'IS_IN_DB'
+p153
+S"<class 'gluon.validators.IS_IN_DB'>"
+p154
+sS'TAG'
+p155
+S'<gluon.html.__TAG__ object>'
+p156
+sS'SQLField'
+p157
+S"<class 'pydal.objects.Field'>"
+p158
+sS'mail'
+p159
+S'<gluon.tools.Mail object>'
+p160
+sS'BODY'
+p161
+S"<class 'gluon.html.BODY'>"
+p162
+sS'IS_DATE_IN_RANGE'
+p163
+S"<class 'gluon.validators.IS_DATE_IN_RANGE'>"
+p164
+sS'IFRAME'
+p165
+S"<class 'gluon.html.IFRAME'>"
+p166
+sS'URL'
+p167
+S'<function URL>'
+p168
+sS'__file__'
+p169
+S"'/home/LedC/web2py/applications/prayer/views/default/index.html'"
+p170
+sS'db'
+p171
+S'<DAL uri="sqlite://heroku.test.sqlite">'
+p172
+sS'auth'
+p173
+S'<gluon.tools.Auth object>'
+p174
+sS'P'
+S"<class 'gluon.html.P'>"
+p175
+sS'TFOOT'
+p176
+S"<class 'gluon.html.TFOOT'>"
+p177
+sS'XHTML'
+p178
+S"<class 'gluon.html.XHTML'>"
+p179
+sS'ON'
+p180
+S'True'
+p181
+sS'OL'
+p182
+S"<class 'gluon.html.OL'>"
+p183
+sS'TEXTAREA'
+p184
+S"<class 'gluon.html.TEXTAREA'>"
+p185
+sS'MENU'
+p186
+S"<class 'gluon.html.MENU'>"
+p187
+sS'IS_IMAGE'
+p188
+S"<class 'gluon.validators.IS_IMAGE'>"
+p189
+sS'EM'
+p190
+S"<class 'gluon.html.EM'>"
+p191
+sS'CODE'
+p192
+S"<class 'gluon.html.CODE'>"
+p193
+sS'HTTP'
+p194
+S"<class 'gluon.http.HTTP'>"
+p195
+sS'HR'
+p196
+S"<class 'gluon.html.HR'>"
+p197
+sS'IS_DATETIME'
+p198
+S"<class 'gluon.validators.IS_DATETIME'>"
+p199
+sS'STYLE'
+p200
+S"<class 'gluon.html.STYLE'>"
+p201
+sS'LABEL'
+p202
+S"<class 'gluon.html.LABEL'>"
+p203
+sS'CLEANUP'
+p204
+S"<class 'gluon.validators.CLEANUP'>"
+p205
+sS'plugins'
+p206
+S'<gluon.tools.PluginManager object>'
+p207
+sS'SELECT'
+p208
+S"<class 'gluon.html.SELECT'>"
+p209
+sS'CENTER'
+p210
+S"<class 'gluon.html.CENTER'>"
+p211
+sS'Auth'
+p212
+S"<class 'gluon.tools.Auth'>"
+p213
+sS'DEVELOPMENT_MENU'
+p214
+g181
+sS'__builtins__'
+p215
+S"{'ArithmeticError': <type 'exceptions.ArithmeticError'>, 'AssertionError': <type 'exceptions.AssertionError'>, 'AttributeError': <type 'exceptions.AttributeError'>, 'BaseException': <type 'exceptions.BaseException'>, 'BufferError': <type 'exceptions.BufferError'>, 'BytesWarning': <type 'exceptions.BytesWarning'>, 'DeprecationWarning': <type 'exceptions.DeprecationWarning'>, 'EOFError': <type 'exceptions.EOFError'>, 'Ellipsis': Ellipsis, 'EnvironmentError': <type 'exceptions.EnvironmentError'>, ...}"
+p216
+sS'HTML'
+p217
+S"<class 'gluon.html.HTML'>"
+p218
+sS'SQLFORM'
+p219
+S"<class 'gluon.sqlhtml.SQLFORM'>"
+p220
+sS'LOAD'
+p221
+S'<function LOAD>'
+p222
+sS'redirect'
+p223
+S'<function redirect>'
+p224
+sS'FIELDSET'
+p225
+S"<class 'gluon.html.FIELDSET'>"
+p226
+sS'IS_EQUAL_TO'
+p227
+S"<class 'gluon.validators.IS_EQUAL_TO'>"
+p228
+sS'embed64'
+p229
+S'<function embed64>'
+p230
+sS'IS_LIST_OF'
+p231
+S"<class 'gluon.validators.IS_LIST_OF'>"
+p232
+sS'INPUT'
+p233
+S"<class 'gluon.html.INPUT'>"
+p234
+sS'EMBED'
+p235
+S"<class 'gluon.html.EMBED'>"
+p236
+sS'_'
+S'<function _>'
+p237
+sS'myconf'
+p238
+S"{'forms': {'formstyle': 'bootstrap3_inline', 'se...': {'names': 'localhost:*, 127.0.0.1:*, *:*, *'}}"
+p239
+sS'H2'
+p240
+S"<class 'gluon.html.H2'>"
+p241
+sS'H3'
+p242
+S"<class 'gluon.html.H3'>"
+p243
+sS'AppConfig'
+p244
+S'<function AppConfig>'
+p245
+sS'H1'
+p246
+S"<class 'gluon.html.H1'>"
+p247
+sS'H6'
+p248
+S"<class 'gluon.html.H6'>"
+p249
+sS'H4'
+p250
+S"<class 'gluon.html.H4'>"
+p251
+sS'H5'
+p252
+S"<class 'gluon.html.H5'>"
+p253
+sS'UL'
+p254
+S"<class 'gluon.html.UL'>"
+p255
+sS'get_db'
+p256
+S'<function get_db>'
+p257
+sS'IS_UPPER'
+p258
+S"<class 'gluon.validators.IS_UPPER'>"
+p259
+sS'xmlescape'
+p260
+S'<function xmlescape>'
+p261
+sS'IS_TIME'
+p262
+S"<class 'gluon.validators.IS_TIME'>"
+p263
+sS'OPTION'
+p264
+S"<class 'gluon.html.OPTION'>"
+p265
+sS'TITLE'
+p266
+S"<class 'gluon.html.TITLE'>"
+p267
+sS'CRYPT'
+p268
+S"<class 'gluon.validators.CRYPT'>"
+p269
+sS'IS_EMPTY_OR'
+p270
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p271
+sS'MARKMIN'
+p272
+S"<class 'gluon.html.MARKMIN'>"
+p273
+sS'__name__'
+p274
+S"'__restricted__'"
+p275
+sS'STRONG'
+p276
+S"<class 'gluon.html.STRONG'>"
+p277
+sS'COL'
+p278
+S"<class 'gluon.html.COL'>"
+p279
+sS'service'
+p280
+S'<gluon.tools.Service object>'
+p281
+sS'SCRIPT'
+p282
+S"<class 'gluon.html.SCRIPT'>"
+p283
+sS'TABLE'
+p284
+S"<class 'gluon.html.TABLE'>"
+p285
+sS'IS_IPV4'
+p286
+S"<class 'gluon.validators.IS_IPV4'>"
+p287
+sS'IS_LENGTH'
+p288
+S"<class 'gluon.validators.IS_LENGTH'>"
+p289
+sS'IS_IPV6'
+p290
+S"<class 'gluon.validators.IS_IPV6'>"
+p291
+sS'XML'
+p292
+S"<class 'gluon.html.XML'>"
+p293
+sS'B'
+S"<class 'gluon.html.B'>"
+p294
+sS'IMG'
+p295
+S"<class 'gluon.html.IMG'>"
+p296
+sS'SQLTABLE'
+p297
+S"<class 'gluon.sqlhtml.SQLTABLE'>"
+p298
+sS'IS_MATCH'
+p299
+S"<class 'gluon.validators.IS_MATCH'>"
+p300
+sS'IS_ALPHANUMERIC'
+p301
+S"<class 'gluon.validators.IS_ALPHANUMERIC'>"
+p302
+sS'SPAN'
+p303
+S"<class 'gluon.html.SPAN'>"
+p304
+sS'IS_JSON'
+p305
+S"<class 'gluon.validators.IS_JSON'>"
+p306
+sS'IS_IPADDRESS'
+p307
+S"<class 'gluon.validators.IS_IPADDRESS'>"
+p308
+sS'IS_SLUG'
+p309
+S"<class 'gluon.validators.IS_SLUG'>"
+p310
+sS'BEAUTIFY'
+p311
+S"<class 'gluon.html.BEAUTIFY'>"
+p312
+sS'META'
+p313
+S"<class 'gluon.html.META'>"
+p314
+sS'BUTTON'
+p315
+S"<class 'gluon.html.BUTTON'>"
+p316
+sS'IS_DATE'
+p317
+S"<class 'gluon.validators.IS_DATE'>"
+p318
+sS'IS_EMAIL'
+p319
+S"<class 'gluon.validators.IS_EMAIL'>"
+p320
+sS'IS_NOT_EMPTY'
+p321
+S"<class 'gluon.validators.IS_NOT_EMPTY'>"
+p322
+sS'IS_FLOAT_IN_RANGE'
+p323
+S"<class 'gluon.validators.IS_FLOAT_IN_RANGE'>"
+p324
+sS'TBODY'
+p325
+S"<class 'gluon.html.TBODY'>"
+p326
+sS'CAT'
+p327
+S"<class 'gluon.html.CAT'>"
+p328
+sS'Field'
+p329
+S"<class 'pydal.objects.Field'>"
+p330
+sS'IS_LIST_OF_EMAILS'
+p331
+S"<class 'gluon.validators.IS_LIST_OF_EMAILS'>"
+p332
+sS'DIV'
+p333
+S"<class 'gluon.html.DIV'>"
+p334
+sS'LEGEND'
+p335
+S"<class 'gluon.html.LEGEND'>"
+p336
+sS'form'
+p337
+S'<gluon.sqlhtml.SQLFORM object>'
+p338
+sS'COLGROUP'
+p339
+S"<class 'gluon.html.COLGROUP'>"
+p340
+sS'DAL'
+p341
+S"<class 'pydal.base.DAL'>"
+p342
+sS'ASSIGNJS'
+p343
+S'<function ASSIGNJS>'
+p344
+sS'TR'
+p345
+S"<class 'gluon.html.TR'>"
+p346
+sS'LI'
+p347
+S"<class 'gluon.html.LI'>"
+p348
+sS'TH'
+p349
+S"<class 'gluon.html.TH'>"
+p350
+sS'TD'
+p351
+S"<class 'gluon.html.TD'>"
+p352
+sS'PluginManager'
+p353
+S"<class 'gluon.tools.PluginManager'>"
+p354
+sS'IS_URL'
+p355
+S"<class 'gluon.validators.IS_URL'>"
+p356
+sS'A'
+S"<class 'gluon.html.A'>"
+p357
+sS'HEAD'
+p358
+S"<class 'gluon.html.HEAD'>"
+p359
+sS'IS_DATETIME_IN_RANGE'
+p360
+S"<class 'gluon.validators.IS_DATETIME_IN_RANGE'>"
+p361
+sS'FORM'
+p362
+S"<class 'gluon.html.FORM'>"
+p363
+sS'I'
+S"<class 'gluon.html.I'>"
+p364
+sS'IS_NOT_IN_DB'
+p365
+S"<class 'gluon.validators.IS_NOT_IN_DB'>"
+p366
+sg122
+S"<Storage {'body': <cStringIO.StringO object at 0...t 0x7f35b069d9b0>, 'view': 'default/index.html'}>"
+p367
+sS'THEAD'
+p368
+S"<class 'gluon.html.THEAD'>"
+p369
+sS'ANY_OF'
+p370
+S"<class 'gluon.validators.ANY_OF'>"
+p371
+sS'IS_NULL_OR'
+p372
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p373
+sg56
+S"<Storage {'_vars': None, 'function': 'index', 'c...lder': '/home/LedC/web2py/applications/prayer/'}>"
+p374
+sS'IS_EXPR'
+p375
+S"<class 'gluon.validators.IS_EXPR'>"
+p376
+sS'T'
+S'<gluon.languages.translator object>'
+p377
+sS'IS_IN_SET'
+p378
+S"<class 'gluon.validators.IS_IN_SET'>"
+p379
+sS'IS_UPLOAD_FILENAME'
+p380
+S"<class 'gluon.validators.IS_UPLOAD_FILENAME'>"
+p381
+sS'TT'
+p382
+S"<class 'gluon.html.TT'>"
+p383
+sS'IS_DECIMAL_IN_RANGE'
+p384
+S"<class 'gluon.validators.IS_DECIMAL_IN_RANGE'>"
+p385
+sssS'traceback'
+p386
+S'Traceback (most recent call last):\n  File "/home/LedC/web2py/gluon/restricted.py", line 227, in restricted\n    exec ccode in environment\n  File "/home/LedC/web2py/applications/prayer/views/default/index.html", line 4, in <module>\n    <!-- Theme Made By www.w3schools.com - No Copyright -->\nNameError: name \'date\' is not defined\n'
+p387
+s.

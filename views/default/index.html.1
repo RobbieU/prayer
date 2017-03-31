@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>National Prayer Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 {
+      background-color: #388777; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 {
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 {
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 {
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#who">WHO</a></li>
+        <li><a href="#what">WHAT</a></li>
+        <li><a href="#when">WHEN</a></li>
+        <li><a href="#where">WHERE</a></li>
+          <li><a href="#why">WHY</a></li>
+          <li><a href="#how">HOW</a></li>
+          <li><a href="#how">CONTRIBUTE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+    <h1 class = "Margin">
+        National Prayer Project, U.S.A.
+    </h1>
+    <h2>
+       Because there is more that binds us than divides us.
+    </h2>
+
+  {{=(CENTER(IMG(_src=URL('static','tr.jpg'), _class="img-responsive img-circle margin", _style="max-width:40%; max-height:40%", _alt="tree")))}}
+
+  <h1 id="who" class="margin">Who?</h1>
+  <h3>You! and as many people we can get to pray at the same time on the same day.</h3>
+    <p><h3>
+    We invite those of faith any faith and no faith to participate.</p>
+    <p></h3>
+
+
+    </p>
+    {{=form}}
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 id="what" class="margin">What?</h3>
+  <p>It is quite simple; we are praying; praying for ourselves, elected officials, media, and protesters.  What is happening across in our country is very American and political discourse should be welcomed.  Let’s take a moment to stop calling those on the other side extremists and recognize we are all radicals. America is a radical idea.  What is going on is tradition and our country needs it.</p>
+    <p>
+Let’s unclench our fists, relax our jaws and consider all that binds us.  Anything beyond that is up to you; your prayer is your prayer.
+ </p>
+
+</div>
+    <!-- 3 Container -->
+    <div class="container-fluid bg-1 text-center">
+  <h3 id="when" class="margin">When?</h3>
+
+  <p>We can also notify you by e-mail so that you don't have to keep checking back here. We will send you an e-mail the day before.  The prayer time will be at 1pm pacific standard time that following day.  The days will be picked at random and will occur about once every 8 days.
+Again, we send you an e-mail and that means we all pray for a couple minutes beginning at 1pm (PSD) the following day.
+
+ </p>
+
+<!-- image Container -->
+
+        
+    <div class="col-sm-3">
+      <p><strong>Samoa</strong></p>
+        <p><strong>10am</strong></p><br>
+       {{=(CENTER(IMG(_src=URL('static','samoa.jpeg'), _class="img-responsive img-circle margin", _alt="img")))}}
+    </div>
+    <div class="col-sm-3">
+      <p><strong>Hawaii</strong></p>
+        <p><strong>11am</strong></p><br>
+      {{=(CENTER(IMG(_src=URL('static','hawaii.jpeg'), _class="img-responsive img-circle margin", _alt="img")))}}
+    </div>
+    <div class="col-sm-3">
+      <p><strong>Alaska</strong></p>
+        <p><strong>Noon</strong></p><br>
+      {{=(CENTER(IMG(_src=URL('static','alaska.jpg'), _class="img-responsive img-circle margin", _alt="img")))}}
+    </div>
+    <div class="col-sm-3">
+      <p><strong>Pacific</strong></p>
+        <p><strong>1pm</strong></p><br>
+      {{=(CENTER(IMG(_src=URL('static','california.jpg'), _class="img-responsive img-circle margin", _alt="img")))}}
+    </div>
+    <div class="col-sm-3">
+      <p><strong>Mountain</strong></p>
+        <p><strong>2pm</strong></p><br>
+      {{=(CENTER(IMG(_src=URL('static','mountain.jpg'), _class="img-responsive img-circle margin", _alt="img")))}}
+    </div>
+    <div class="col-sm-3">
+      <p><strong>Central</strong></p>
+        <p><strong>3pm</strong></p><br>
+      {{=(CENTER(IMG(_src=URL('static','central.jpeg'), _class="img-responsive img-circle margin", _alt="img")))}}
+    </div>
+    <div class="col-sm-3">
+      <p><strong>Eastern</strong></p>
+        <p><strong>4m</strong></p><br>
+      {{=(CENTER(IMG(_src=URL('static','eastern.jpg'), _class="img-responsive img-circle margin", _alt="img")))}}
+    </div>
+</div>
+</div>
+    <!-- 4 Container -->
+    <div class="container-fluid bg-2 text-center">
+  <h3 id="where" class="margin">Where?</h3>
+  <p>Wherever you are is where it is happening.  The only coordination going on in the world of space-time is time.    </p>
+
+</div>
+    <!-- 5 Container -->
+    <div class="container-fluid bg-1 text-center">
+  <h3 id="why"  class="margin">Why?</h3>
+  <p>It is getting ugly out there.  There is too much yelling, too much violence, too much division, too much self-assuredness and not enough listening; let’s not lose our humanity.  </p>
+
+</div>
+    <!-- 6 Container -->
+    <div class="container-fluid bg-2 text-center">
+  <h3 id="how" class="margin">How?</h3>
+        <p>The following is from the bible and seems like good advice.</p>
+        <p>5 “And when you pray, do not be like the hypocrites, for they love to pray standing in the synagogues and on the street corners to be seen by others. Truly I tell you, they have received their reward in full. 6 But when you pray, go into your room, close the door and pray to your Father, who is unseen. Then your Father, who sees what is done in secret, will reward you. 7 And when you pray, do not keep on babbling like pagans, for they think they will be heard because of their many words. 8 Do not be like them, for your Father knows what you need before you ask him." Matthew 6:4-8
+        </p>
+        <p>
+            Pray how you want to pray.  You can't get it wrong.
+        </p>
+
+</div>
+ <!-- 5 Container -->
+    <div class="container-fluid bg-1 text-center">
+  <h3 id="contribute" class="margin">Contribute</h3>
+  <p>Do consider making a small contirbution.  We ask for a one time donation of $4. </p>
+        <p>
+            This will help keep the lights on and the website running.
+        </p>
+
+
+    <form action="#" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_V5b84CCXyZ0XSM7E4Cl1mI48"
+    data-amount="400"
+    data-name="NationalPrayerProject.com"
+    data-description="Widget"
+    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+    data-locale="auto"
+    data-zip-code="true">
+  </script>
+</form>
+
+</div>
+</body>
+</html>

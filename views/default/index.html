@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>National Prayer Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 {
+      background-color: #388777; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 {
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 {
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 {
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#who">WHO</a></li>
+        <li><a href="#when">WHEN</a></li>
+        <li><a href="#what">WHAT</a></li>
+        <li><a href="#where">WHERE</a></li>
+        <li><a href="#why">WHY</a></li>
+        <li><a href="#how">HOW</a></li>
+        <li><a href="#how">CONTRIBUTE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+    <h1 class = "Margin">
+        National Prayer Project, U.S.A.
+    </h1>
+    <h2>
+       Because there is more that binds us than divides us.
+    </h2>
+
+  {{=(CENTER(IMG(_src=URL('static','tr.jpg'), _class="img-responsive img-circle margin", _style="max-width:40%; max-height:40%", _alt="tree")))}}
+
+    <h1 id="who" class="margin">Who?</h1>
+  <h3>You! and as many people we can get to pray at the same time on the same day.</h3>
+    <p><h3>
+    We invite those of faith any faith and no faith to participate.</p>
+    <p></h3><br>
+
+    
+</div>
+    <div class="well well-sm"></div>
+
+<!-- Second Container -->
+
+    <div class="container-fluid bg-2 text-center">
+  <h1 id="when" class="margin">When?</h1>
+        <p><h1>
+    {{from datetime import date, datetime, timedelta}}
+    {{from gluon.tools import prettydate}}
+    The next prayer day is 
+    {{da = (date(2017,3,25), date(2017,4,8), date(2017,4,22), date(2017,5,6), date(2017,5,20), date(2017,6,3), date(2017,6,17), date(2017,7,1), date(2017,7,15), date(2017,7,29), date(2017,8,12), date(2017,8,26), date(2017,9,9), date(2017,9,23), date(2017,10,7), date(2017,10,21), date(2017,11,4), date(2017,11,18), date(2017,12,2), date(2017,12,16), date(2017,12,30), date(2018,1,13), date(2018,1,27), date(2018,2,10), date(2018,2,24), date(2018,3,10), date(2018,3,24), date(2018,4,21), date(2018,5,5), date(2018,5,19), date(2018,6,2), date(2018,6,16), date(2018,6,30), date(2018,7,14), date(2018,7,28), date(2018,8,11), date(2018,8,25), date(2018,9,8), date(2018,9,22), date(2018,10,6), date(2018,10,20), date(2018,11,3), date(2018,11,17), date(2018,12,15), date(2018,12,29), date(2019,1,26), date(2019,2,9), date(2019,2,23), date(2019,3,9), date(2019,3,23), date(2019,4,6), date(2019,4,20), date(2019,5,04), date(2019,5,18), date(2019,6,1), date(2019,6,29), date(2019,7,13), date(2019,7,27), date(2019,8,24), date(2019,9,21), date(2019,10,5), date(2019,10,19), date(2019,11,2), date(2019,11,30), date(2019,12,14), date(2019,12,28), date(2020,1,11), date(2020,1,25), date(2020,2,8), date(2020,2,22), date(2020,3,7), date(2020,3,21), date(2020,4,4), date(2020,4,18), date(2020,5,16), date(2020,5,30), date(2020,6,13), date(2020,6,27), date(2020,7,11), date(2020,7,25), date(2020,8,8), date(2020,8,22), date(2020,9,5), date(2020,9,19), date(2020,10,5), date(2020,10,17), date(2020,10,31), date(2020,11,14), date(2020,11,28))}}
+
+{{for item in da:}}
+    {{if item >= date.today():}}
+     {{pretty_d = prettydate(item,T)}}
+    <br>
+      {{ =pretty_d}}
+      {{break}}
+      {{pass}}
+    </h1>
+
+    </p>
+
+  <p><h3>The prayer time will be at 1pm pacific standard time(see below for your time zone).  The days will be picked at random and will occur about once every 8 days.  The day will be displayed above at least 24 hours ahead of time. Again, we all pray for a couple minutes beginning at 1pm (PSD) that day.
+
+ </p></h3><br>
+
+<!-- image Container -->
+
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2">
+      <p><strong>Samoa</strong></p>
+        <p><strong>10am</strong></p><br>
+       {{=(CENTER(IMG(_src=URL('static','samoa.jpeg'), _class="img-responsive img-circle margin", _alt="img")))}}
+    </div>
+    <div class="col-sm-2">
+      <p><strong>Hawaii</strong></p>
+        <p><strong>11am</strong></p><br>
+      {{=(CENTER(IMG(_src=URL('static','hawaii2.jpg'), _class="img-responsive img-circle margin", _alt="img")))}}
+    </div>
+    <div class="col-sm-2">
+      <p><strong>Alaska</strong></p>
+        <p><strong>Noon</strong></p><br>
+      {{=(CENTER(IMG(_src=URL('static','alaska.jpg'), _class="img-responsive img-circle margin", _alt="img")))}}
+    </div>
+    <div class="col-sm-2">
+      <p><strong>Pacific</strong></p>
+        <p><strong>1pm</strong></p><br>
+      {{=(CENTER(IMG(_src=URL('static','california.jpg'), _class="img-responsive img-circle margin", _alt="img")))}}
+    </div>
+</div>
+        <div class="row">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-1"></div>
+    <div class="col-sm-2">
+      <p><strong>Mountain</strong></p>
+        <p><strong>2pm</strong></p><br>
+      {{=(CENTER(IMG(_src=URL('static','mountain.jpg'), _class="img-responsive img-circle margin", _alt="img")))}}
+    </div>
+    <div class="col-sm-2">
+      <p><strong>Central</strong></p>
+        <p><strong>3pm</strong></p><br>
+      {{=(CENTER(IMG(_src=URL('static','central.jpeg'), _class="img-responsive img-circle margin", _alt="img")))}}
+    </div>
+    <div class="col-sm-2">
+      <p><strong>Eastern</strong></p>
+        <p><strong>4pm</strong></p><br>
+      {{=(CENTER(IMG(_src=URL('static','eastern.jpg'), _class="img-responsive img-circle margin", _alt="img")))}}
+    </div>
+        </div>
+</div>
+</div>
+<div class="well well-sm"></div>
+<div class="container-fluid bg-1 text-center">
+  <h1 id="what" class="margin">What?</h1>
+  <p><h3>
+    
+    It is quite simple; we are praying; praying for peace and civility in ourselves, media, protesters and elected officials.  What is happening across in our country is very American and political discourse should be welcomed.  Let’s take a moment to stop calling those on the other side extremists and recognize we are all radicals. America is a radical idea.  What is going on is tradition and our country needs it.</p></h3>
+    <p><h3><br>
+
+
+Let’s unclench our fists, relax our jaws for a moment and consider all that binds us.  Anything beyond that is up to you; your prayer is your prayer.
+ </p></h3>
+
+</div>
+    <!-- 3 Container -->
+<div class="well well-sm"></div>
+    <!-- 4 Container -->
+    <div class="container-fluid bg-2 text-center">
+  <h1 id="where" class="margin">Where?</h1>
+  <p><h3> Wherever you are is where it is happening.  We are just focused on time.    </p></h3>
+
+</div>
+<div class="well well-sm"></div>
+    <!-- 5 Container -->
+    <div class="container-fluid bg-1 text-center">
+  <h1 id="why"  class="margin">Why?</h1>
+  <p><h3>There is too much yelling, too much violence, too much division, too much self-assuredness and not enough listening; let’s not lose our humanity.  </p></h3>
+
+</div>
+<div class="well well-sm"></div>
+    <!-- 6 Container -->
+    <div class="container-fluid bg-2 text-center">
+  <h1 id="how" class="margin">How?</h1>
+        <p><h3>The following is from The Bible and seems like good advice.</h3></p><br>
+        <p><h3>5 “And when you pray, do not be like the hypocrites, for they love to pray standing in the synagogues and on the street corners to be seen by others. Truly I tell you, they have received their reward in full. 6 But when you pray, go into your room, close the door and pray to your Father, who is unseen. Then your Father, who sees what is done in secret, will reward you. 7 And when you pray, do not keep on babbling like pagans, for they think they will be heard because of their many words. 8 Do not be like them, for your Father knows what you need before you ask him." Matthew 6:4-8
+       </h3> </p><br>
+        <p><h3>
+            Pray how you want to pray.  You can't get it wrong.</h3>
+        </p>
+
+</div>
+<div class="well well-sm"></div>
+ <!-- 5 Container -->
+    <div class="container-fluid bg-1 text-center">
+  <h1 id="contribute" class="margin">Contribute</h1>
+  <p><h3>Do consider making a small contribution.  We ask for a one time donation of $4.</h3> </p>
+        <p><h3>
+            This will help keep the lights on and the website running.
+        </p></h3>
+ <p><h3>If this is not an option that is fine.  We could use your help in spreading the word.</h3> </p><br>
+
+
+    <form action="#" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_V5b84CCXyZ0XSM7E4Cl1mI48"
+    data-amount="400"
+    data-name="NationalPrayerProject.com"
+    data-description=""
+    data-image=""
+    data-locale="auto"
+    data-zip-code="true">
+  </script>
+</form>
+
+</div>
+<div class="well well-sm"></div>
+ <footer class="footer">
+      <div class="container-fluid bg-2 text-center">
+        <div class="copyright pull-left">{{=T('Copyright')}} &#169; {{=request.now.year}}</div>
+          <div id="poweredBy" class="pull-right">
+            {{=T('Powered by')}}
+            <a href="http://www.web2py.com/">web2py</a>
+          </div>
+      </div>
+    </footer>
+</body>
+</html>

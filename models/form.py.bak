@@ -1,0 +1,4 @@
+# -*- coding: utf-8 -*-
+fort = DAL('sqlite://storage.sqlite')
+fort.define_table('person',
+          Field("enter_your_email", requires = IS_EMAIL(error_message='invalid email!'))),
